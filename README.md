@@ -6,10 +6,11 @@
 ● Otherwise, they are turned face down. The player has won when all cards have been turned over.
 
 ## What I learn in this project :
-● Discovery of <b> React JS </b> <br>
-● Discovery of <b> Components </b> <br>
-● Discovery of <b> Hooks </b>
+● Discovery of <b> React JS. </b> <br>
+● Discovery of <b> Components. </b> <br>
+● Discovery of <b> Hooks. </b>
 
 ## My plan to build this project
 ● <b>Make a wireframe</b>, this one will us identify the different components and will facilitate the realization of the project. <br>
-● Create components. (Cards...) <br>
+● <b>Create components.</b> (Cards...) <br>
+● <b>Choose 15 pairs.</b> (30 Cards)
