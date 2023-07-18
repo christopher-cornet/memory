@@ -12,4 +12,4 @@
 
 ## My plan to build this project
 ● <b>Make a wireframe</b>, this one will us identify the different components and will facilitate the realization of the project. <br>
-● Create components. <br>
+● Create components. (Cards...) <br>
