@@ -1,0 +1,23 @@
+.memory-game {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3vh;
+}
+
+.left-options {
+  margin-right: 20px;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  column-gap: 25px;
+  row-gap: 25px;
+  justify-items: center;
+  align-items: center;
+}
+
+.cards-grid img {
+  width: 100%;
+}
