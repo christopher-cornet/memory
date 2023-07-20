@@ -13,4 +13,6 @@
 ## My plan to build this project
 ● <b>Make a wireframe</b>, this one will us identify the different components and will facilitate the realization of the project. <br>
 ● <b>Create components.</b> (Cards...) <br>
-● <b>Choose 15 pairs.</b> (30 Cards)
+● <b>Choose 15 pairs.</b> (30 Cards) <br>
+● <b>Add functionality to shuffle cards.</b> <br>
+● <b>2 choices maximum per pair if the pair is identical, leave it face up otherwise turn over the 2 cards.</b>
