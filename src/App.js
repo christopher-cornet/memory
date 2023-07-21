@@ -2,7 +2,7 @@ import './App.css';
 import React from 'react';
 import Verso from './components/verso/verso';
 // import verso from './img/verso.jpg'; // Face Down Card
-import dialga from './img/dialga.png';
+// import dialga from './img/dialga.png';
 
 function App() {
   return (
@@ -12,66 +12,7 @@ function App() {
           <p>Test</p>
         </div>
         <div class="cards-grid">
-          <Verso/>
-          <Verso/>
-          <Verso/>
-          <Verso/>
-          <Verso/>
-          <Verso/>
-          <Verso/>
-          <Verso/>
-          <Verso/>
-          <Verso/>
-          <Verso/>
-          <Verso/>
-          <Verso/>
-          <Verso/>
-          <Verso/>
-          <Verso/>
-          <Verso/>
-          <Verso/>
-          <Verso/>
-          <Verso/>
-          <Verso/>
-          <Verso/>
-          <Verso/>
-          <Verso/>
-          <Verso/>
-          <Verso/>
-          <Verso/>
-          <Verso/>
-          <Verso/>
-          <Verso/>
-          
-          {/* <img src={verso}/>
-          <img src={verso}/>
-          <img src={verso}/>
-          <img src={verso}/>
-          <img src={verso}/>
-          <img src={verso}/>
-          <img src={verso}/>
-          <img src={verso}/>
-          <img src={verso}/>
-          <img src={verso}/>
-          <img src={verso}/>
-          <img src={dialga}/>
-          <img src={verso}/>
-          <img src={verso}/>
-          <img src={verso}/>
-          <img src={verso}/>
-          <img src={verso}/>
-          <img src={verso}/>
-          <img src={verso}/>
-          <img src={verso}/>
-          <img src={verso}/>
-          <img src={verso}/>
-          <img src={verso}/>
-          <img src={verso}/>
-          <img src={verso}/>
-          <img src={verso}/>
-          <img src={verso}/>
-          <img src={verso}/>
-          <img src={verso}/> */}
+          {Array(30).fill(<Verso />)}
         </div>
       </div>
     </div>
