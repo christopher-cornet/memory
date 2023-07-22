@@ -16,3 +16,5 @@
 ● <b>Choose 15 pairs.</b> (30 Cards) <br>
 ● <b>Add functionality to shuffle cards.</b> <br>
 ● <b>2 choices maximum per pair if the pair is identical, leave it face up otherwise turn over the 2 cards.</b>
+
+## Screenshots
