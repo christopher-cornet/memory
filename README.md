@@ -5,7 +5,7 @@
 ● If the player turns over two identical cards, they remain turned over. <br>
 ● Otherwise, they are turned face down. The player has won when all cards have been turned over.
 
-## What I learn in this project :
+## What I learn in this project
 ● Discovery of <b> React JS. </b> <br>
 ● Discovery of <b> Components. </b> <br>
 ● Discovery of <b> Hooks. </b>
