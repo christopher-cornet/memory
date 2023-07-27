@@ -1,7 +1,6 @@
 import './App.css';
 import { useEffect, useState } from 'react';
-// import verso from '/img/verso.jpg'; // Face Down Card
-// import dialga from './img/dialga.png';
+import Card from './components/card/Card';
 
 const cardImages = [
 	{ "src": "/img/0.png" },
@@ -41,7 +40,7 @@ function App() {
 	const [turns, setTurns] = useState(0)
 
 	const shuffleCards = () => {
-		const shuffledCards = [...cardImages, ...cardImages]
+		const shuffledCards = [...cardImages]
 			.sort(() => Math.random() - 0.5)
 			.map((card) => ({ ...card, id: Math.random() }))
 
@@ -61,12 +60,7 @@ function App() {
 			
 			<div class="cards-grid">
 				{cards.map(card => (
-					<div className="card" key={card.id}>
-						<div>
-							<img className="front" src={card.src} alt="card front" />
-							<img className="back" src="/img/verso.jpg" alt="card back" />
-						</div>
-					</div>
+					<Card key={card.id} card={card}/>
 				))}
 			</div>
 		</div>

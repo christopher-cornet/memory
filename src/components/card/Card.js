@@ -1,22 +1,13 @@
-// Method to display the card (dark side by default)
-
-// Method : if two same cards are returned do {let them shown}
-
+import "../../App.css"
 import React from "react";
-import darksidecard from "../../img/verso.jpg";
 
-export default function Card() {
+export default function Card({ card }) {
     return (
-        <img
-            src={darksidecard}
-        />
+        <div className="card">
+            <div>
+                <img className="front" src={card.src} alt="card front" />
+                <img className="back" src={"/img/verso.jpg"} alt="card back" />
+            </div>
+        </div>
     )
 }
-
-// const Card = ({card, index}) => {
-//     return (
-//         <div class="cards-grid">
-//             <img src={card.src} alt="card" />
-//         </div>
-//     )
-// }
