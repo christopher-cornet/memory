@@ -1,22 +1,77 @@
 import './App.css';
-import React from 'react';
-import Verso from './components/verso/verso';
-// import verso from './img/verso.jpg'; // Face Down Card
+import { useEffect, useState } from 'react';
+// import verso from '/img/verso.jpg'; // Face Down Card
 // import dialga from './img/dialga.png';
 
+const cardImages = [
+	{ "src": "/img/0.png" },
+	{ "src": "/img/1.png" },
+	{ "src": "/img/2.png" },
+	{ "src": "/img/3.png" },
+	{ "src": "/img/4.png" },
+	{ "src": "/img/5.png" },
+	{ "src": "/img/6.png" },
+	{ "src": "/img/7.png" },
+	{ "src": "/img/8.png" },
+	{ "src": "/img/9.png" },
+	{ "src": "/img/10.png" },
+	{ "src": "/img/11.png" },
+	{ "src": "/img/12.png" },
+	{ "src": "/img/13.png" },
+	{ "src": "/img/14.png" },
+	{ "src": "/img/15.png" },
+	{ "src": "/img/16.png" },
+	{ "src": "/img/17.png" },
+	{ "src": "/img/18.png" },
+	{ "src": "/img/19.png" },
+	{ "src": "/img/20.png" },
+	{ "src": "/img/21.png" },
+	{ "src": "/img/22.png" },
+	{ "src": "/img/23.png" },
+	{ "src": "/img/24.png" },
+	{ "src": "/img/25.png" },
+	{ "src": "/img/26.png" },
+	{ "src": "/img/27.png" },
+	{ "src": "/img/28.png" },
+	{ "src": "/img/29.png" }
+]
+
 function App() {
-  return (
-    <div className="App">
-      <div class="memory-game">
-        <div class="left-options">
-          <p>Test</p>
-        </div>
-        <div class="cards-grid">
-          {Array(30).fill(<Verso />)}
-        </div>
-      </div>
-    </div>
-  );
+	const [cards, setCards] = useState([])
+	const [turns, setTurns] = useState(0)
+
+	const shuffleCards = () => {
+		const shuffledCards = [...cardImages, ...cardImages]
+			.sort(() => Math.random() - 0.5)
+			.map((card) => ({ ...card, id: Math.random() }))
+
+		setCards(shuffledCards)
+		setTurns(0)
+	}
+
+	console.log(cards, turns)
+
+	return (
+	<div className="App">
+		<div class="memory-game">
+			<div class="left-options">
+				<p>Test</p>
+				<button onClick={shuffleCards}>Shuffle</button>
+			</div>
+			
+			<div class="cards-grid">
+				{cards.map(card => (
+					<div className="card" key={card.id}>
+						<div>
+							<img className="front" src={card.src} alt="card front" />
+							<img className="back" src="/img/verso.jpg" alt="card back" />
+						</div>
+					</div>
+				))}
+			</div>
+		</div>
+	</div>
+	);
 }
 
-export default App;
+export default App
