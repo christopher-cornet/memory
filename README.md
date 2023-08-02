@@ -18,3 +18,4 @@
 ● <b>2 choices maximum per pair if the pair is identical, leave it face up otherwise turn over the 2 cards.</b>
 
 ## Screenshots
+![screenshot](https://github.com/christopher-cornet/memory/assets/115154379/6fcc2606-486c-43dc-abc6-9e387e4bb3b6)
