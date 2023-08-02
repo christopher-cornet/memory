@@ -1,6 +1,8 @@
 import './App.css';
 import { useEffect, useState } from 'react';
 import Card from './components/card/Card';
+import Title from './components/title/Title';
+import Button from './components/button/Button';
 
 const cardImages = [
 	{ "src": "/img/0.png", matched: false },
@@ -75,8 +77,8 @@ function App() {
 	<div className="App">
 		<div class="memory-game">
 			<div class="left-options">
-				<img src="/img/logo.png" alt="card back" width="166px" height="93px" />
-				<button onClick={shuffleCards}><b>Start</b></button>
+				<Title />
+				<Button shuffleCards={shuffleCards}/>
 			</div>
 			
 			<div class="cards-grid">
